@@ -1,7 +1,6 @@
 package local.lembrete.zonelembrete;
 
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,22 +22,10 @@ public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
     private ArrayList<Alarme> list = new ArrayList<Alarme>();
     private Context context;
 
-
     public ListaAlarmeAdapter(ArrayList<Alarme> list, Context context) {
         this.list = list;
         this.context = context;
     }
-
-    @Override
-    public void registerDataSetObserver(DataSetObserver dataSetObserver) {
-
-    }
-
-    @Override
-    public void unregisterDataSetObserver(DataSetObserver dataSetObserver) {
-
-    }
-
     @Override
     public int getCount() {
         return list.size();
@@ -51,12 +38,8 @@ public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
 
     @Override
     public long getItemId(int i) {
-        return list.get(i).getId();
-    }
-
-    @Override
-    public boolean hasStableIds() {
-        return false;
+        //return list.get(i).getId();
+        return 0;
     }
 
     @Override
@@ -64,7 +47,7 @@ public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
         View view = convertView;
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.my_custom_list_layout, null);
+            view = inflater.inflate(R.layout.alarme_elemento_lista, null);
         }
 
         //Handle TextView and display string from your list
