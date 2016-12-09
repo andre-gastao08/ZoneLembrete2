@@ -14,12 +14,14 @@ import java.util.ArrayList;
 
 
 /**
- * Created by Rui on 09-Dec-16.
+ *
+ * Adaptador para a lista de alarmes usado para os mostrar no ecrã do menu.
+ * 
  */
 
 public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
 
-    private ArrayList<Alarme> list = new ArrayList<Alarme>();
+    private ArrayList<Alarme> list = new ArrayList<>();
     private Context context;
 
     public ListaAlarmeAdapter(ArrayList<Alarme> list, Context context) {
