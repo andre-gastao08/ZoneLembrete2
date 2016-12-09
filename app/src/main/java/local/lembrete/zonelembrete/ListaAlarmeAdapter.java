@@ -51,7 +51,7 @@ public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
 
     @Override
     public long getItemId(int i) {
-        return list.get(i).getId();
+        return list.get(i);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class ListaAlarmeAdapter extends BaseAdapter implements ListAdapter{
         View view = convertView;
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.my_custom_list_layout, null);
+            view = inflater.inflate(R.layout.alarme_elemento_lista, null);
         }
 
         //Handle TextView and display string from your list
