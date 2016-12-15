@@ -37,7 +37,7 @@ public class MenuAtividade extends AppCompatActivity {
         ListaAlarmeAdapter adapter =new ListaAlarmeAdapter(lista, this);
 
         ListView listView = (ListView)findViewById(R.id.list_alarme);
-
+        listView.setAdapter(adapter);
     }
 
     @Override
