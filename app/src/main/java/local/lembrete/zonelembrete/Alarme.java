@@ -4,23 +4,15 @@ package local.lembrete.zonelembrete;
  * Created by Rui on 09-Dec-16.
  */
 
-public class Alarme {
-    public String nome;
+class Alarme {
+    private String nome;
 
-
-
-
-    public Alarme( String nome){
-        this.nome= nome;
+    //Para testes.
+     Alarme(String nome){
+        this.nome=nome;
     }
-
     @Override
     public String toString() {
         return nome;
-    }
-
-    public long getId(){
-    // return 0 por enquanto
-        return 0;
     }
 }
