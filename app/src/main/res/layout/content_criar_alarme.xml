@@ -24,20 +24,55 @@
         tools:text="Etiqueta:" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView"
         android:layout_alignBottom="@+id/textView"
-        android:layout_marginStart="30dp"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/textView2"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:singleLine="true" />
 
-    <com.google.android.gms.maps.MapFragment
-        android:id="@+id/mapFragment"
+    <EditText
+        android:id="@+id/dataInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/nome"
+        android:ems="10"
+        android:inputType="date"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/dataInicio"
+        android:layout_marginTop="35dp"
+        android:text="Data de fim" />
+
+    <EditText
+        android:id="@+id/datafim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dataInicio"
+        android:layout_below="@+id/dataInicio"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="date"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
-        android:layout_marginStart="28dp" />
+        android:layout_below="@+id/nome"
+        android:layout_marginTop="32dp"
+        android:text="Data de Inicio" />
+
 </RelativeLayout>
