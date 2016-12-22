@@ -2,4 +2,8 @@
     <string name="app_name">ZoneLembrete</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_criar_alarme">CriarAlarme</string>
+    <string name="data_de_inicio">Data de Inicio</string>
+    <string name="data_de_fim">Data de fim</string>
+    <string name="nome">Etiqueta:</string>
+    <string name="imagem_do_alarme">Imagem do alarme.</string>
 </resources>

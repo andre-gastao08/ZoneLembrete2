@@ -21,7 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="42dp"
-        tools:text="Etiqueta:" />
+        tools:text="@string/nome" />
 
     <EditText
         android:id="@+id/nome"
@@ -33,7 +33,7 @@
         android:layout_toEndOf="@+id/textView2"
         android:ems="10"
         android:inputType="textPersonName"
-        android:singleLine="true" />
+        android:maxLines="1" />
 
     <EditText
         android:id="@+id/dataInicio"
@@ -53,10 +53,10 @@
         android:layout_alignStart="@+id/textView2"
         android:layout_below="@+id/dataInicio"
         android:layout_marginTop="35dp"
-        android:text="Data de fim" />
+        android:text="@string/data_de_fim" />
 
     <EditText
-        android:id="@+id/datafim"
+        android:id="@+id/dataFim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/dataInicio"
@@ -73,6 +73,26 @@
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/nome"
         android:layout_marginTop="32dp"
-        android:text="Data de Inicio" />
+        android:text="@string/data_de_inicio" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/dataFim"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="29dp"
+        tools:layout_width="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageCamera"
+            android:layout_width="287dp"
+            android:layout_height="204dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imagem_do_alarme"
+            android:scaleType="fitXY"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            tools:layout_width="match_parent" />
+    </FrameLayout>
 
 </RelativeLayout>
