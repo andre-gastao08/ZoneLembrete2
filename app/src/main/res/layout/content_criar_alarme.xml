@@ -21,6 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="42dp"
+        android:labelFor="@+id/nome"
         tools:text="@string/nome" />
 
     <EditText
@@ -35,6 +36,16 @@
         android:inputType="textPersonName"
         android:maxLines="1" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/nome"
+        android:layout_marginTop="32dp"
+        android:labelFor="@+id/dataInicio"
+        android:text="@string/data_de_inicio" />
+    
     <EditText
         android:id="@+id/dataInicio"
         android:layout_width="wrap_content"
@@ -53,6 +64,7 @@
         android:layout_alignStart="@+id/textView2"
         android:layout_below="@+id/dataInicio"
         android:layout_marginTop="35dp"
+        android:labelFor="@+id/dataFim"
         android:text="@string/data_de_fim" />
 
     <EditText
@@ -66,14 +78,6 @@
         android:inputType="date"
         android:maxLines="1" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_below="@+id/nome"
-        android:layout_marginTop="32dp"
-        android:text="@string/data_de_inicio" />
 
     <FrameLayout
         android:layout_width="wrap_content"
